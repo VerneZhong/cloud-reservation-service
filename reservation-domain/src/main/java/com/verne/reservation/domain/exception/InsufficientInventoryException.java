@@ -5,6 +5,12 @@ package com.verne.reservation.domain.exception;
  */
 public final class InsufficientInventoryException extends DomainException {
 
+    /**
+     * 要求数と予約可能数を使用して例外を生成します。
+     *
+     * @param requested 要求された予約数
+     * @param available 現在の予約可能数
+     */
     public InsufficientInventoryException(int requested, int available) {
         super("Insufficient inventory: requested=%d, available=%d".formatted(requested, available));
     }

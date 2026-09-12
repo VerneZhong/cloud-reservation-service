@@ -14,9 +14,15 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
  */
 class ReservationTest {
 
+    /**
+     * テストで基準とする固定日時です。
+     */
     private static final Instant NOW = Instant.parse("2026-09-12T10:00:00Z");
 
     @Test
+    /**
+     * 有効期限内に仮予約を確定できることを確認します。
+     */
     void confirmsPendingReservationBeforeExpiration() {
         Reservation reservation = pendingReservation();
 
@@ -27,6 +33,9 @@ class ReservationTest {
     }
 
     @Test
+    /**
+     * 有効期限後の確定が拒否されることを確認します。
+     */
     void rejectsConfirmationAfterExpiration() {
         Reservation reservation = pendingReservation();
 
@@ -37,6 +46,9 @@ class ReservationTest {
     }
 
     @Test
+    /**
+     * 有効期限を迎えた仮予約が失効することを確認します。
+     */
     void expiresPendingReservationAtExpirationTime() {
         Reservation reservation = pendingReservation();
 
@@ -46,6 +58,9 @@ class ReservationTest {
     }
 
     @Test
+    /**
+     * 失効済み予約の取消が拒否されることを確認します。
+     */
     void rejectsCancellationOfExpiredReservation() {
         Reservation reservation = pendingReservation();
         reservation.expire(NOW.plus(15, ChronoUnit.MINUTES));
@@ -54,6 +69,11 @@ class ReservationTest {
                 .isInstanceOf(InvalidReservationStateException.class);
     }
 
+    /**
+     * テスト用の仮予約を生成します。
+     *
+     * @return テスト用の仮予約
+     */
     private Reservation pendingReservation() {
         return Reservation.createPending(
                 ReservationId.newId(),

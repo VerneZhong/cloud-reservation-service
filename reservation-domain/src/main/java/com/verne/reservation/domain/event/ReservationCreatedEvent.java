@@ -9,6 +9,12 @@ import java.util.Objects;
 
 /**
  * 仮予約が作成されたことを表すドメインイベントです。
+ *
+ * @param reservationId 予約ID
+ * @param userId 利用者ID
+ * @param eventId イベントID
+ * @param quantity 予約数
+ * @param occurredAt イベント発生日時
  */
 public record ReservationCreatedEvent(
         ReservationId reservationId,
@@ -18,6 +24,9 @@ public record ReservationCreatedEvent(
         Instant occurredAt
 ) implements DomainEvent {
 
+    /**
+     * 各項目を検証して予約作成イベントを生成します。
+     */
     public ReservationCreatedEvent {
         Objects.requireNonNull(reservationId, "reservationId must not be null");
         Objects.requireNonNull(userId, "userId must not be null");

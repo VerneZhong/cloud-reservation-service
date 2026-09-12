@@ -7,5 +7,10 @@ import java.time.Instant;
  */
 public interface DomainEvent {
 
+    /**
+     * イベントが発生した日時を返します。
+     *
+     * @return イベント発生日時
+     */
     Instant occurredAt();
 }

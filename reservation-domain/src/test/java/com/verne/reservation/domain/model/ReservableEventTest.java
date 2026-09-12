@@ -14,9 +14,15 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
  */
 class ReservableEventTest {
 
+    /**
+     * テストで基準とする固定日時です。
+     */
     private static final Instant NOW = Instant.parse("2026-09-12T10:00:00Z");
 
     @Test
+    /**
+     * 公開済みイベントが受付期間内に予約可能であることを確認します。
+     */
     void publishedEventIsReservableInsideBookingWindow() {
         ReservableEvent event = draftEvent();
         event.publish();
@@ -25,6 +31,9 @@ class ReservableEventTest {
     }
 
     @Test
+    /**
+     * 下書きイベントが予約不可であることを確認します。
+     */
     void draftEventIsNotReservable() {
         ReservableEvent event = draftEvent();
 
@@ -33,6 +42,9 @@ class ReservableEventTest {
     }
 
     @Test
+    /**
+     * 受付終了日時以降は予約不可であることを確認します。
+     */
     void eventIsNotReservableAtClosingTime() {
         ReservableEvent event = draftEvent();
         event.publish();
@@ -40,6 +52,11 @@ class ReservableEventTest {
         assertThat(event.isReservableAt(NOW.plus(7, ChronoUnit.DAYS))).isFalse();
     }
 
+    /**
+     * テスト用の下書きイベントを生成します。
+     *
+     * @return テスト用イベント
+     */
     private ReservableEvent draftEvent() {
         return new ReservableEvent(
                 EventId.newId(),

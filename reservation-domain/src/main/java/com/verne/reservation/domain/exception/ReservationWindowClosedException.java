@@ -5,6 +5,9 @@ package com.verne.reservation.domain.exception;
  */
 public final class ReservationWindowClosedException extends DomainException {
 
+    /**
+     * 予約受付期間外を表す例外を生成します。
+     */
     public ReservationWindowClosedException() {
         super("The event is not open for reservations");
     }

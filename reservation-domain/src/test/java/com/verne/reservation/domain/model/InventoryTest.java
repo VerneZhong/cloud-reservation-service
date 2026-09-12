@@ -12,6 +12,9 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 class InventoryTest {
 
     @Test
+    /**
+     * 予約可能な在庫が正しく確保されることを確認します。
+     */
     void reservesAvailableInventory() {
         Inventory inventory = new Inventory(EventId.newId(), 10);
 
@@ -22,6 +25,9 @@ class InventoryTest {
     }
 
     @Test
+    /**
+     * 在庫不足の場合に予約が拒否されることを確認します。
+     */
     void rejectsReservationWhenInventoryIsInsufficient() {
         Inventory inventory = new Inventory(EventId.newId(), 2);
 
@@ -32,6 +38,9 @@ class InventoryTest {
     }
 
     @Test
+    /**
+     * 確保済み在庫が正しく返却されることを確認します。
+     */
     void releasesReservedInventory() {
         Inventory inventory = new Inventory(EventId.newId(), 10);
         inventory.reserve(4);
