@@ -3,7 +3,7 @@ package com.verne.reservation.domain.exception;
 import com.verne.reservation.domain.model.ReservationStatus;
 
 /**
- * Indicates that an operation is not allowed in the current reservation state.
+ * 現在の予約状態では許可されていない操作を表す例外です。
  */
 public final class InvalidReservationStateException extends DomainException {
 

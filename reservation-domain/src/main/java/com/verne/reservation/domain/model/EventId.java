@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 /**
- * Strongly typed identifier for a reservable event.
+ * 予約対象イベントを一意に識別する値オブジェクトです。
  */
 public record EventId(UUID value) {
 

@@ -6,7 +6,7 @@ import com.verne.reservation.domain.model.ReservableEvent;
 import java.util.Optional;
 
 /**
- * Defines persistence operations required by the reservable event domain.
+ * 予約対象イベントに必要な永続化操作を定義するリポジトリです。
  */
 public interface ReservableEventRepository {
 

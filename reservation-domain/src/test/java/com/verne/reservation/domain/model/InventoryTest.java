@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
- * Verifies inventory reservation and release business rules.
+ * 在庫の確保および返却に関するビジネスルールを検証します。
  */
 class InventoryTest {
 

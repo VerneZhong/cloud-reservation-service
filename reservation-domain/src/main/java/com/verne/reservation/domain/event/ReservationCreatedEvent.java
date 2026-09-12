@@ -8,7 +8,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 /**
- * Represents the creation of a pending reservation.
+ * 仮予約が作成されたことを表すドメインイベントです。
  */
 public record ReservationCreatedEvent(
         ReservationId reservationId,

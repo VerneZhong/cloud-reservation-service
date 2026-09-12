@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 /**
- * Aggregate that manages reservation data and lifecycle transitions.
+ * 予約情報とライフサイクルの状態遷移を管理する集約です。
  */
 public final class Reservation {
 

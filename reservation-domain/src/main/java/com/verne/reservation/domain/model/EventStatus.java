@@ -1,7 +1,7 @@
 package com.verne.reservation.domain.model;
 
 /**
- * Defines the lifecycle states of a reservable event.
+ * 予約対象イベントのライフサイクル状態を定義します。
  */
 public enum EventStatus {
     DRAFT,

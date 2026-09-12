@@ -6,7 +6,7 @@ import com.verne.reservation.domain.model.Inventory;
 import java.util.Optional;
 
 /**
- * Defines persistence operations required by the inventory domain.
+ * 在庫ドメインに必要な永続化操作を定義するリポジトリです。
  */
 public interface InventoryRepository {
 

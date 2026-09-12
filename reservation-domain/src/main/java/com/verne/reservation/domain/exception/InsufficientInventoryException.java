@@ -1,7 +1,7 @@
 package com.verne.reservation.domain.exception;
 
 /**
- * Indicates that the requested quantity exceeds the available inventory.
+ * 要求数が予約可能な在庫数を超えた場合に発生する例外です。
  */
 public final class InsufficientInventoryException extends DomainException {
 

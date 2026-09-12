@@ -1,7 +1,7 @@
 package com.verne.reservation.domain.exception;
 
 /**
- * Base exception for violations of reservation domain rules.
+ * 予約ドメインのビジネスルール違反を表す基底例外です。
  */
 public abstract class DomainException extends RuntimeException {
 

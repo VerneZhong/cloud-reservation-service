@@ -5,7 +5,7 @@ import com.verne.reservation.domain.exception.InsufficientInventoryException;
 import java.util.Objects;
 
 /**
- * Maintains event capacity and enforces inventory availability rules.
+ * イベントの定員と予約可能数を管理するドメインモデルです。
  */
 public final class Inventory {
 

@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
- * Verifies reservation lifecycle transition business rules.
+ * 予約のライフサイクルにおける状態遷移を検証します。
  */
 class ReservationTest {
 

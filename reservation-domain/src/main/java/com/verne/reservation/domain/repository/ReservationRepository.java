@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Defines persistence operations required by the reservation domain.
+ * 予約ドメインに必要な永続化操作を定義するリポジトリです。
  */
 public interface ReservationRepository {
 

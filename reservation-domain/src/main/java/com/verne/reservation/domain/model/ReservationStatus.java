@@ -1,7 +1,7 @@
 package com.verne.reservation.domain.model;
 
 /**
- * Defines the lifecycle states of a reservation.
+ * 予約のライフサイクル状態を定義します。
  */
 public enum ReservationStatus {
     PENDING,

@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 /**
- * Aggregate that manages event details, publication state, and reservation window.
+ * イベント情報、公開状態および予約受付期間を管理する集約です。
  */
 public final class ReservableEvent {
 

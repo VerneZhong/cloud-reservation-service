@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
- * Verifies event publication and reservation-window business rules.
+ * イベントの公開状態と予約受付期間に関するルールを検証します。
  */
 class ReservableEventTest {
 

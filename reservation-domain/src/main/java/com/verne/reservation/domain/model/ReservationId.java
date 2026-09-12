@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 /**
- * Strongly typed identifier for a reservation.
+ * 予約を一意に識別する値オブジェクトです。
  */
 public record ReservationId(UUID value) {
 
