@@ -5,6 +5,9 @@ import com.verne.reservation.domain.exception.ReservationWindowClosedException;
 import java.time.Instant;
 import java.util.Objects;
 
+/**
+ * Aggregate that manages event details, publication state, and reservation window.
+ */
 public final class ReservableEvent {
 
     private final EventId id;

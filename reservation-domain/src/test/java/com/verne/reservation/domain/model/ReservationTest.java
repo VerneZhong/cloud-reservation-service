@@ -9,6 +9,9 @@ import java.time.temporal.ChronoUnit;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+/**
+ * Verifies reservation lifecycle transition business rules.
+ */
 class ReservationTest {
 
     private static final Instant NOW = Instant.parse("2026-09-12T10:00:00Z");

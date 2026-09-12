@@ -7,6 +7,9 @@ import com.verne.reservation.domain.model.UserId;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Defines persistence operations required by the reservation domain.
+ */
 public interface ReservationRepository {
 
     Optional<Reservation> findById(ReservationId id);

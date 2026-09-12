@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+/**
+ * Verifies inventory reservation and release business rules.
+ */
 class InventoryTest {
 
     @Test

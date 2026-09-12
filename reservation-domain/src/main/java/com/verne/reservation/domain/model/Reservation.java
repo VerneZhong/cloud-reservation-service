@@ -5,6 +5,9 @@ import com.verne.reservation.domain.exception.InvalidReservationStateException;
 import java.time.Instant;
 import java.util.Objects;
 
+/**
+ * Aggregate that manages reservation data and lifecycle transitions.
+ */
 public final class Reservation {
 
     private final ReservationId id;

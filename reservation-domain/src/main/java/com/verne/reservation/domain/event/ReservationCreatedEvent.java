@@ -7,6 +7,9 @@ import com.verne.reservation.domain.model.UserId;
 import java.time.Instant;
 import java.util.Objects;
 
+/**
+ * Represents the creation of a pending reservation.
+ */
 public record ReservationCreatedEvent(
         ReservationId reservationId,
         UserId userId,

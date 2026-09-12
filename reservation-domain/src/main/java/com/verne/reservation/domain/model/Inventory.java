@@ -4,6 +4,9 @@ import com.verne.reservation.domain.exception.InsufficientInventoryException;
 
 import java.util.Objects;
 
+/**
+ * Maintains event capacity and enforces inventory availability rules.
+ */
 public final class Inventory {
 
     private final EventId eventId;
