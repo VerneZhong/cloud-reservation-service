@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notification-worker
+
+  main:
+    web-application-type: none
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reservation
+    username: reservation
+    password: reservation
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
