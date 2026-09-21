@@ -116,8 +116,8 @@ IAM の最小権限、Secrets Manager による認証情報管理、入力値検
 
 - [x] Spring Boot 4 / Java 21 プロジェクトの初期構築
 - [x] フレームワーク非依存のドメインモデルと単体テスト
-- [ ] PostgreSQL を使用した永続化層の実装
-- [ ] イベント・予約 API の実装
+- [x] PostgreSQL を使用した永続化層の実装
+- [x] イベント・予約 API の実装
 - [ ] バリデーションと統一例外処理
 - [ ] 同時予約に対する在庫整合性制御
 - [ ] Spring Security による認証・認可
@@ -140,17 +140,6 @@ IAM の最小権限、Secrets Manager による認証情報管理、入力値検
 - Docker
 - Docker Compose
 - Maven Wrapper
-
-## Documentation
-
-開発の進行に合わせて、以下のドキュメントを追加する予定です。
-
-- API specification
-- Database design
-- Architecture Decision Records（ADR）
-- AWS deployment guide
-- Test strategy
-- Cost estimation
 
 ## License
 
